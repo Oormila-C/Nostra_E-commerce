@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra - Collections</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="font-sans bg-white">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-10 py-4 border-b border-gray-200 bg-white sticky top-0 z-50">
+        <h1 class="text-4xl font-extrabold text-gray-900">Nostra</h1>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-10 text-gray-700 font-medium">
+            <li><a class="hover:underline" href="index.html">Home</a></li>
+            <li><a class="hover:underline" href="arrival.html">New Arrival</a></li>
+            <li><a class="hover:underline" href="mostwanted.html">Most Wanted</a></li>
+            <li><a class="hover:underline" href="collection.html">Collections</a></li>
+            <li><a class="hover:underline" href="contact_us.html">Contact Us</a></li>
+        </ul>
+        <!-- Mobile Hamburger -->
+        <button id="menuBtn" class="md:hidden text-3xl text-gray-800 focus:outline-none">&#9776;</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b px-10 py-4">
+        <ul class="flex flex-col gap-4 text-gray-700 font-medium">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrival</a></li>
+            <li><a href="#">Most Wanted</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="flex flex-col md:flex-row min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-[280px] md:min-w-[280px] px-8 py-8 border-b md:border-b-0 md:border-r border-gray-300">
+
+            <!-- Search (mobile only) -->
+            <div class="flex md:hidden items-center border border-gray-300 rounded-full px-4 py-2 mb-8">
+                <input type="text" placeholder="search" class="flex-1 outline-none text-gray-500 text-sm">
+                <button class="text-gray-500 text-lg">🔍</button>
+            </div>
+
+            <!-- Occasion -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-extrabold mb-4">Occasion</h3>
+                <ul class="flex flex-col gap-3 text-lg text-gray-700">
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Summer
+                    </label></li>
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Party
+                    </label></li>
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Beach
+                    </label></li>
+                </ul>
+            </div>
+
+            <!-- Colors -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-extrabold mb-4">Colors</h3>
+                <ul class="flex flex-col gap-3 text-lg text-gray-700">
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Red
+                    </label></li>
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Blue
+                    </label></li>
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> White
+                    </label></li>
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Green
+                    </label></li>
+                </ul>
+            </div>
+
+            <!-- Arrivals -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-extrabold mb-4">Arrivals</h3>
+                <ul class="flex flex-col gap-3 text-lg text-gray-700">
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> New
+                    </label></li>
+                    <li><label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4"> Old
+                    </label></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 px-6 py-8">
+
+            <!-- Search Bar (desktop) -->
+            <div class="hidden md:flex items-center border border-gray-300 rounded-full px-5 py-3 mb-8">
+                <input type="text" placeholder="search" class="flex-1 outline-none text-gray-500">
+                <button class="text-gray-500 text-xl">🔍</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Product Card 1 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/four.jpg" alt="Floral Summer Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Floral Summer Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹220</p>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/three.jpg" alt="Summer Green" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Summer Green</h3>
+                    <p class="text-gray-600 mt-1">₹260</p>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/five.jpg" alt="Party Floral Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Party Floral Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹399</p>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/four.jpg" alt="Floral Summer Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Floral Summer Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹399</p>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/three.jpg" alt="Beach Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Beach Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹579</p>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/three.jpg" alt="Shirt Party Red" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Shirt Party Red</h3>
+                    <p class="text-gray-600 mt-1">₹579</p>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/four.jpg" alt="Floral Beige Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Floral Beige Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹450</p>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/five.jpg" alt="Rust Blue Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Rust Blue Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹499</p>
+                </div>
+
+                <!-- Product Card 9 -->
+                <div class="cursor-pointer group">
+                    <div class="bg-gray-100 rounded-xl overflow-hidden h-[300px] flex items-center justify-center">
+                        <img src="images/three.jpg" alt="Tropical Print Shirt" class="h-full w-full object-cover group-hover:scale-105 transition duration-300">
+                    </div>
+                    <h3 class="text-xl font-bold mt-3">Tropical Print Shirt</h3>
+                    <p class="text-gray-600 mt-1">₹350</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <!--news letter-->
+        <section class="text-center">
+                <h1 class="text-3xl font-bold mt-5">Join Our News Letter</h1>
+                <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+                <input type="text" class="border border-e-black p-2 m-3" style="width: 80%;"><br>
+                <button class="bg-black text-amber-50 rounded m-3 p-4">Subscribe </button>
+        </section>
+    <!-- Footer -->
+<section class="bg-[#1a1f2e] text-white px-10 py-10">
+
+    <!-- Brand Name -->
+    <h2 class="text-2xl font-bold mb-3">Nostra</h2>
+
+    <!-- Description -->
+    <p class="text-gray-400 max-w-lg mb-6">
+        The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest
+    </p>
+
+    <!-- Social Icons -->
+    <div class="flex gap-6 mb-8">
+        <!-- Instagram -->
+        <a href="#" class="text-white hover:text-gray-400 transition">
+            <img src="images/in.png" alt="Instagram" class="w-7 h-7 bg-white">
+        </a>
+        <!-- Twitter -->
+        <a href="#" class="text-white hover:text-gray-400 transition">
+            <img src="images/t.png" alt="Twitter" class="w-7 h-7 bg-white">
+        </a>
+        <!-- Facebook -->
+        <a href="#" class="text-white hover:text-gray-400 transition">
+            <img src="images/f.png" alt="Facebook" class="w-7 h-7 bg-white">
+        </a>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-gray-700 mb-6">
+
+    <!-- Copyright -->
+    <p class="text-gray-400">@ 2023 Nostra.com</p>
+
+</section>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

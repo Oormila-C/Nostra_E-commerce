@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-normal">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-10 py-4 border-b border-gray-200 bg-white sticky top-0 z-50">
+        <h1 class="text-4xl font-extrabold text-gray-900">Nostra</h1>
+        <ul class="flex gap-10 text-gray-700 font-medium">
+            <li><a class="hover:underline" href="Home.html">Home</a></li>
+            <li><a class="hover:underline" href="#new_arrival">New Arrival</a></li>
+            <li><a class="hover:underline" href="#most_wanted">Most Wanted</a></li>
+            <li><a class="hover:underline" href="Collection.html">Collections</a></li>
+            <li><a class="hover:underline" href="Contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="relative w-full h-[90vh] overflow-hidden">
+
+        <!-- Slides -->
+        <div id="slider" class="flex w-full h-full transition-transform duration-500 ">
+            <div class="min-w-full h-full relative ">
+                <img src="images/one.jpg" alt="Slide 1" class="w-full h-full object-cover brightness-50">
+            </div>
+            <div class="min-w-full h-full relative">
+                <img src="images/two.jpg" alt="Slide 2" class="w-full h-full object-cover brightness-50">
+            </div>
+        </div>
+
+        <!-- Text Overlay -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 pointer-events-none">
+            <h1 class="text-6xl font-extrabold leading-tight">Level up your style with our</h1>
+            <p class="text-xl font-bold mt-4">Summer Collections</p>
+            <a href="Collection.html" class="mt-6 px-8 py-3 bg-white text-gray-900 font-medium hover:bg-gray-100 transition pointer-events-auto">
+                Shop Now →
+            </a>
+        </div>
+
+        <!-- Left Arrow -->
+        <button onclick="prevSlide()" class="absolute left-5 top-1/2 -translate-y-1/2 text-white text-6xl font-bold hover:opacity-70">
+            &#8249;
+        </button>
+
+        <!-- Right Arrow -->
+        <button onclick="nextSlide()" class="absolute right-5 top-1/2 -translate-y-1/2 text-white text-6xl font-bold hover:opacity-70">
+            &#8250;
+        </button>
+
+    </section>
+    <!-- Brands Section -->
+<section class="px-10 py-10">
+    <h2 class="text-2xl font-bold mb-8">Brands</h2>
+    <div class="flex gap-16 items-center justify-between">
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/1.png" alt="Puma" class="w-12 h-12">
+            <span class="text-xl font-medium">Puma</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/2.jpg" alt="Adidas" class="w-12 h-12">
+            <span class="text-xl font-medium">Adidas</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/1.png" alt="Simple" class="w-12 h-12">
+            <span class="text-xl font-medium">Simple</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/2.jpg" alt="Leaves" class="w-12 h-12">
+            <span class="text-xl font-medium">Leaves</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/1.png" alt="Behance" class="w-12 h-12">
+            <span class="text-xl font-medium">Behance</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/1.png" alt="Twitch" class="w-12 h-12">
+            <span class="text-xl font-medium">Twitch</span>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <img src="images/2" alt="Leaves" class="w-12 h-12">
+            <span class="text-xl font-medium">Leaves</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- Customer Experience Section -->
+<section class="px-10 py-10">
+
+    <!-- Heading Row -->
+    <div class="flex justify-between items-center mb-8">
+        <h2 class="text-4xl font-extrabold leading-tight">We Provide Best <br> Customer Experiences</h2>
+        <p class="text-gray-500 text-lg">|| We ensure that our customer have the best shopping experience</p>
+    </div>
+
+    <!-- Cards Row -->
+    <div class="grid grid-cols-4 gap-6">
+
+        <div class="bg-gray-100 rounded-xl p-6">
+            <div class="text-3xl mb-4">✅</div>
+            <h3 class="font-bold mb-2">Original Products</h3>
+            <p class="text-gray-500 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-6">
+            <div class="text-3xl mb-4">😊</div>
+            <h3 class="font-bold mb-2">Satisfaction Guarantee</h3>
+            <p class="text-gray-500 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-6">
+            <div class="text-3xl mb-4">🧹</div>
+            <h3 class="font-bold mb-2">New Arrival Everyday</h3>
+            <p class="text-gray-500 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-6">
+            <div class="text-3xl mb-4">🚚</div>
+            <h3 class="font-bold mb-2">Fast & Free Shipping</h3>
+            <p class="text-gray-500 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.</p>
+        </div>
+        
+    </div>
+</section>
+<!-- New Arrivals Section -->
+<section id="new_arrival" class="px-10 py-10">
+    <h2 class="text-2xl font-bold mb-8">New Arrivals</h2>
+
+    <div class="grid grid-cols-4 gap-6">
+
+        <!-- Card 1 -->
+        <div class="relative rounded-2xl overflow-hidden bg-gray-400 h-[420px]">
+            <img src="images/three.jpg" alt="Shirt" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="absolute bottom-6 left-6">
+                <a href="#" class="bg-white text-gray-900 font-medium px-5 py-2 rounded-full hover:bg-gray-100 transition">
+                    Shop Now →
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative rounded-2xl overflow-hidden bg-gray-400 h-[420px]">
+            <img src="images/four.jpg" alt="Pants" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="absolute bottom-6 left-6">
+                <a href="#" class="bg-white text-gray-900 font-medium px-5 py-2 rounded-full hover:bg-gray-100 transition">
+                    Shop Now →
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative rounded-2xl overflow-hidden bg-gray-400 h-[420px]">
+            <img src="images/five.jpg" alt="Blue Shirt" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="absolute bottom-6 left-6">
+                <a href="#" class="bg-white text-gray-900 font-medium px-5 py-2 rounded-full hover:bg-gray-100 transition">
+                    Shop Now →
+                </a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative rounded-2xl overflow-hidden bg-gray-400 h-[420px]">
+            <img src="images/three.jpg" alt="Jacket" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="absolute bottom-6 left-6">
+                <a href="#" class="bg-white text-gray-900 font-medium px-5 py-2 rounded-full hover:bg-gray-100 transition">
+                    Shop Now →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Most Wanted Section -->
+<section id="most_wanted" class="px-10 py-10">
+    <h2 class="text-2xl font-bold mb-8">Most Wanted</h2>
+
+    <!-- Horizontal Scroll Container -->
+    <div class="flex gap-6 overflow-x-auto scrollbar-hide pb-4">
+
+        <!-- Card 1 -->
+        <div class="relative min-w-[300px] bg-gray-100 rounded-2xl p-4 flex-shrink-0">
+            <!-- Sale Badge -->
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">sale</span>
+            <!-- Heart -->
+            <button onclick="toggleHeart(this)" class="absolute bottom-4 right-4 text-2xl text-gray-400 hover:text-red-500 transition">
+                ♡
+            </button>
+            <!-- Image -->
+            <img src="images/four.jpg" alt="Shirt 1" class="w-full h-[280px] object-contain">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative min-w-[300px] bg-gray-100 rounded-2xl p-4 flex-shrink-0">
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">sale</span>
+            <button onclick="toggleHeart(this)" class="absolute bottom-4 right-4 text-2xl text-gray-400 hover:text-red-500 transition">
+                ♡
+            </button>
+            <img src="images/five.jpg" alt="Shirt 2" class="w-full h-[280px] object-contain">
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative min-w-[300px] bg-gray-100 rounded-2xl p-4 flex-shrink-0">
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">sale</span>
+            <button onclick="toggleHeart(this)" class="absolute bottom-4 right-4 text-2xl text-gray-400 hover:text-red-500 transition">
+                ♡
+            </button>
+            <img src="images/three.jpg" alt="Shirt 3" class="w-full h-[280px] object-contain">
+        </div>
+
+        <!-- Card 4 -->
+        <div class="relative min-w-[300px] bg-gray-100 rounded-2xl p-4 flex-shrink-0">
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">sale</span>
+            <button onclick="toggleHeart(this)" class="absolute bottom-4 right-4 text-2xl text-gray-400 hover:text-red-500 transition">
+                ♡
+            </button>
+            <img src="images/four.jpg" alt="Shirt 4" class="w-full h-[280px] object-contain">
+        </div>
+
+        <!-- Card 5 -->
+        <div class="relative min-w-[300px] bg-gray-100 rounded-2xl p-4 flex-shrink-0">
+            <span class="absolute top-4 left-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded">sale</span>
+            <button onclick="toggleHeart(this)" class="absolute bottom-4 right-4 text-2xl text-gray-400 hover:text-red-500 transition">
+                ♡
+            </button>
+            <img src="images/five.jpg" alt="Shirt 5" class="w-full h-[280px] object-contain">
+        </div>
+
+        <!-- Add more cards as needed -->
+        
+    </div>
+</section>
+<!-- Limited Offer Section -->
+<section class="px-10 py-10">
+    <div class="flex items-center bg-[#1a1f2e] rounded-2xl overflow-hidden h-[350px]">
+
+        <!-- Left Image -->
+        <img src="images/offer.jpg" alt="Limited Offer" class="w-[42%] h-full object-cover flex-shrink-0">
+
+        <!-- Right Content -->
+        <div class="flex flex-col gap-6 px-16 text-white">
+            <h2 class="text-5xl font-bold">Limited Offer</h2>
+            <p class="text-2xl font-semibold">35% OFF on this for the first 30 Customers</p>
+            <a href="#" class="w-fit bg-white text-gray-900 font-medium px-8 py-3 rounded-xl hover:bg-gray-100 transition">
+                Shop Now →
+            </a>
+        </div>
+
+    </div>
+</section>
+<!--news letter-->
+        <section class="text-center">
+                <h1 class="text-3xl font-bold mt-5">Join Our News Letter</h1>
+                <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+                <input type="text" class="border border-e-black p-2 m-3" style="width: 80%;"><br>
+                <button class="bg-black text-amber-50 rounded m-3 p-4">Subscribe </button>
+        </section>
+<!-- Footer -->
+<section class="bg-[#1a1f2e] text-white px-10 py-10">
+
+    <!-- Brand Name -->
+    <h2 class="text-2xl font-bold mb-3">Nostra</h2>
+
+    <!-- Description -->
+    <p class="text-gray-400 max-w-lg mb-6">
+        The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest
+    </p>
+
+    <!-- Social Icons -->
+    <div class="flex gap-6 mb-8">
+        <!-- Instagram -->
+        <a href="#" class="text-white hover:text-gray-400 transition">
+            <img src="images/in.png" alt="Instagram" class="w-7 h-7 bg-white">
+        </a>
+        <!-- Twitter -->
+        <a href="#" class="text-white hover:text-gray-400 transition">
+            <img src="images/t.png" alt="Twitter" class="w-7 h-7 bg-white">
+        </a>
+        <!-- Facebook -->
+        <a href="#" class="text-white hover:text-gray-400 transition">
+            <img src="images/f.png" alt="Facebook" class="w-7 h-7 bg-white">
+        </a>
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-gray-700 mb-6">
+
+    <!-- Copyright -->
+    <p class="text-gray-400">@ 2023 Nostra.com</p>
+
+</section>
+    <script>
+        let current = 0;
+        const slides = document.querySelectorAll('#slider > div');
+
+        function updateSlider() {
+            document.getElementById('slider').style.transform = `translateX(-${current * 100}%)`;
+        }
+
+        function nextSlide() {
+            current = (current + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            current = (current - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        // Auto slide every 3 seconds
+        setInterval(nextSlide, 3000);
+        function toggleHeart(btn) {
+        if (btn.textContent.trim() === '♡') {
+            btn.textContent = '♥';
+            btn.classList.remove('text-gray-400');
+            btn.classList.add('text-red-500');
+        } else {
+            btn.textContent = '♡';
+            btn.classList.remove('text-red-500');
+            btn.classList.add('text-gray-400');
+        }
+    }
+    </script>
+    <!-- Hide scrollbar style -->
+<style>
+    *{
+        padding: 6;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+</body>
+</html>
+
